@@ -34,47 +34,54 @@
             height: 90%;
         }
         .section_04 .container_subtitles img {
-
             height: 95%;
         }
+
         .context-text {
             width: 37%;
             height: 70%;
             translate: 10% -50%;
-        }
+        }       
         .section_03 .context-text p {
             font-size: 2.2rem;
-        }
+        }        
         .section_03 .context-text span {
             font-size: 2.5em;
             min-width: 20%;
             margin-top: -10px;
         }
+
         .first_col {
             width: 35px;
             height: 125%;
         }
+
         .line {
             background-position: 65% 60%;
             width: 100%;
         }
+
         .section_02 .content_info {
             height: 70%;
         }
+        
         .sec_col {
             width: 375px;
             gap: 5.8rem 0;
             padding-top: .8rem;
         }
+        
         .content_info p {
             font-size: 17px;
             margin-bottom: -25px;
         }
+
         .section_01 .paragraph {
             top: 50%;
-            font-size: 20px
+            font-size: 20px;
         }
-        h1{
+
+        h1 {
             width: 414px;
             font-size: 80px;
             position: absolute;
@@ -86,121 +93,136 @@
             z-index: 1;   
             transition: text-shadow 0.5s ease;
         }
+
         @media (max-width: 1350px) {
             .section_03 .context-text p {
                 font-size: 2rem;
                 padding-right: 0;
             }
+            
+            .tranding-slide-img img {
+                width: 100%;
+                height: auto;
+            }
         }
+
         @media (max-width: 1075px) {
             .section_02 .content_info {
                 font-size: 1.2rem;
-            } 
+            }           
             .sec_col {
                 width: 100%;
                 padding: 0;
                 transform: translate(7%, -5%);
-            }
+            }            
             .line {
                 width: 35px;
-            }
+            }           
             .sec_col p {
                 font-size: 1.37em;
-            }
+            }            
             .section_03 .context-text p {
                 font-size: 1.5rem;
                 padding-right: 0;
-            }
+            }            
             .section_03 .context-text span {
                 margin-top: -5px;
-            }
+            }            
             .section_01 .paragraph {
                 font-size: 1.5rem;
                 translate: -10% -10%;
                 top: 30%;
+            }            
+            .tranding-slide-img img {
+                width: 100%;
+                height: auto;
             }
         }
+
         @media (max-width: 765px) {
-            
             .sec_col {
                 justify-content: space-between;
-            }
+            }            
             .sec_col p {
                 font-size: 1.3em;
-            }
+            }            
             .first_col {
                 display: none;
-            }
+            }            
             .line {
                 height: 100%;
+            }            
+            .tranding-slide-img img {
+                width: 100%;
+                height: auto;
             }
         }
-        @media (max-width: 500px) {
-            .section_02 .sec_col p {
-                margin: 0;
-                font-size: 12px;
-            }
-            .line {
-                height: 105%;
-            }
 
-            #main-portada {
-                height: 275px;
-            }
-            
-        }
         @media (max-width: 575px) {
             .sec_col p {
                 font-size: 1.2rem;
                 transform: translate(0%, 40%);
-            }
+            }            
             .sec_col {
                 justify-content: center;
                 top: auto;
                 font-size: 1.1rem;
                 gap: 10%;
-            }
+            }            
             .context-text {
                 width: 45% !important;
-            }
+            }            
             .section_01 .paragraph {
                 width: 45%;
                 font-size: 15px;
                 transform: translate(0%, -15%);
-            }
+            }            
             .section_03 .context-text p {
                 font-size: 12px;
-            }
+            }            
             .section_03 .context-text span {
                 font-size: 2rem;
                 margin-top: 0;
-            }
+            }            
             .line {
                 width: 24px;
                 position: relative;
                 top: 0;
-            }
+            }            
             h1 {
                 font-size: 40px;
                 top: 50px !important;
                 width: 51% !important;
                 left: 10px !important;
+            }            
+            .tranding-slide-img img {
+                width: 100%;
+                height: auto;
             }
         }
+
         @media (max-width: 405px) {
             .section_03 .context-text {
                 gap: 1rem 0;
                 translate: 5% -55%;
             }
         }
+
         @media (max-width: 320px) {
             .section_01 .paragraph {
                 font-size: 1rem;
             }
+            
+            .tranding-slide-img img {
+                width: 100%;
+                height: auto;
+            }
         }
+
         .section_04 {
-            background-color: #FEFAF5
+            background-color: #FEFAF5;
         }
+        
         .slider--inner img {
             bottom: 100px;
         }
@@ -209,22 +231,36 @@
             width: 450px;
             left: 20%;
         }
-
-
+        
         #semiazul {
             top: 60%;
             width: 20%;
             height: 40%;
         }
-
-        .asesoria-gratis{
+        
+        .asesoria-gratis {
             top: 80%;
             width: 200px;
             transform: translate(10%, -30%);
             font-size: 40px;
         }
 
-    </style>
+        /* Estilos para el slider */
+        .tranding-slide-img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        
+        .tranding-slide-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+</style>
+
     <meta name="google-site-verification" content="W_l4sQOITnTO1rpKtYsth1y89RXuhQ3aIkt4A9VTJgs" />
 </head>
 
@@ -395,34 +431,53 @@
 
                         <div class="swiper-slide tranding-slide">
                             <div class="tranding-slide-img">
-                                <img loading="lazy" src="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
+                                <picture>
+                                    <source srcset="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.webp" type="image/webp">
+                                    <source srcset="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.jpg" alt="tranding_image_slide" width="800" height="600">
+                                </picture>
                             </div>
                         </div>
 
                         <div class="swiper-slide tranding-slide">
                             <div class="tranding-slide-img">
-                                <img loading="lazy" src="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
+                                <picture>
+                                    <source srcset="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.webp" type="image/webp">
+                                    <source srcset="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.jpg" alt="tranding_image_slide" width="800" height="600">
+                                </picture>
                             </div>
                         </div>
 
                         <div class="swiper-slide tranding-slide">
                             <div class="tranding-slide-img">
-                                <img loading="lazy" src="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
+                                <picture>
+                                    <source srcset="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.webp" type="image/webp">
+                                    <source srcset="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.jpg" alt="tranding_image_slide" width="800" height="600">
+                                </picture>
                             </div>
                         </div>
 
                         <div class="swiper-slide tranding-slide">
                             <div class="tranding-slide-img">
-                                <img loading="lazy" src="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
+                                <picture>
+                                    <source srcset="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.webp" type="image/webp">
+                                    <source srcset="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.jpg" alt="tranding_image_slide" width="800" height="600">
+                                </picture>
                             </div>
                         </div>
 
                         <div class="swiper-slide tranding-slide">
                             <div class="tranding-slide-img">
-                                <img loading="lazy" src="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
+                                <picture>
+                                    <source srcset="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.webp" type="image/webp">
+                                    <source srcset="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.jpg" alt="tranding_image_slide" width="800" height="600">
+                                </picture>
                             </div>
                         </div>
-
 
                     </div>
 
@@ -439,6 +494,7 @@
                 </div>
             </div>
         </section>
+
     </div>
 
     <?php include './includes/button-wsp.php' ?>
