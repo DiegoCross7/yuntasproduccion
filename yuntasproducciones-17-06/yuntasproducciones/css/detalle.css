@@ -1,0 +1,233 @@
+* {
+  font-size: 19px;
+}
+.detail-container {
+  margin: 50px auto;
+
+}
+/* CONTENIDO DE PRODUCTO (CANTIDAD DEL CARRITO) */
+
+.content-product {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 50px;
+}
+
+.content-image {
+  max-width: 500px;
+}
+.content-image h1 {
+  font-size: 2.5rem;
+}
+.content-image .info-image {
+  display: flex;
+  margin: 3rem 0;
+}
+.content-image .image-left img {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.price-quantity-card {
+  width: 400px;
+  padding: 20px 30px;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 15px 7px rgba(0, 0, 0, 0.46);
+  border: 1px solid rgb(73, 72, 72);
+  text-align: center;
+}
+.price-quantity-card .price {
+  color: #ff0000;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.price-quantity-card .price strong {
+  font-size: 3.5rem;
+}
+
+.price-quantity-card .quantity p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.price-quantity-card .quantity-options {
+  margin-bottom: 40px;
+}
+.price-quantity-card .quantity-options span {
+  background-color: #d9d9d9;
+  padding: 10px 30px;
+  display: inline-block;
+}
+.price-quantity-card .quantity-options button {
+  background: none !important;
+  border: none;
+  cursor: pointer;
+}
+.price-quantity-card .buy {
+  background-color: #3d53b1;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.1s ease;
+  margin-bottom: 40px;
+}
+
+.price-quantity-card .buy:hover {
+  background-color: #4960ca;
+}
+
+.price-quantity-card .card-info {
+  text-align: start;
+}
+.price-quantity-card .card-info div {
+  margin-bottom: 20px;
+}
+.price-quantity-card .title i {
+  font-weight: 900;
+}
+.price-quantity-card .title {
+  font-weight: 550;
+}
+
+/* CONTENIDO DE INFORMACION DEL PRODUCTO */
+
+.content-info-product {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  margin: 0 auto 25px auto;
+  column-gap: 2rem;
+  padding: 0 50px;
+
+}
+.content-info-product div {
+  width: 50%;
+}
+.content-info-product .info-left {
+  padding-right: 20px;
+  border-right: 2px solid #9f9f9f;
+}
+.content-info-product .title {
+  text-decoration: underline;
+  font-weight: 550;
+  margin-bottom: 15px;
+}
+.content-info-product table {
+  border-collapse: collapse;
+}
+.content-info-product table th {
+  text-align: start;
+}
+.content-info-product table th,
+td {
+  padding: 6px 8px;
+}
+.content-info-product table tr:nth-child(odd) {
+  background-color: #ebebeb;
+}
+
+/* CONTENIDO DE PRODUCOTS SIMILARES */
+
+.content-similar {
+  background-color: #100e6e;
+  padding: 25px 0 60px 0;
+  margin: 50px 0;
+}
+.content-similar .content-card{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.content-similar h3{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 2.4rem;
+}
+.content-similar .cards {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+  
+}
+
+.content-similar .card {
+  background-color: #fff;
+  text-align: center;
+  font-weight: 900;
+  box-shadow: 0 12px 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 0 50px;
+}
+.content-similar .card * {
+  margin-bottom: 20px; 
+}
+.content-similar .card span,
+strong {
+  color: #ff0000;
+}
+.content-similar .card strong {
+  font-size: 4rem;
+}
+/* CONTENIDO DE COMENTARIOS */
+.content-commets {
+  margin-bottom: 200px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.content-commets button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.content-commets .title {
+  text-decoration: underline;
+  font-weight: 550;
+  margin-bottom: 15px;
+}
+
+.content-commets .stars {
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 5px 5px 25px 0;
+}
+.content-commets .stars i {
+  color: #ffc978;
+  margin-right: 3px;
+  font-size: 2.4rem;
+}
+
+.content-commets .content-options button {
+  box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.55);
+  padding: 2px 8px;
+  border-radius: 15px;
+  margin-right: 8rem;
+  margin-bottom: 30px;
+}
+.content-commets .commets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+  margin: 0 auto;
+}
+.content-commets .commets img {
+  width: 80px;
+}
+.content-commets .commets input {
+  border: none;
+  box-shadow: 2px 2px 0 4px rgba(0, 0, 0, 0.35);
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.content-commets .commets input::placeholder {
+  color: black;
+  font-weight: 530;
+}

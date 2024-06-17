@@ -1,0 +1,450 @@
+  /*Formulario en Portada */
+
+#main-portada {
+      width: 100%;
+      position: relative;
+      background-color: #F5F5F5;
+      overflow: hidden;
+      height: 450px; 
+    } 
+#main-portada .principal-img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: auto;
+      }
+.h1_portada {
+  width: 50%;
+  position: relative;
+  font-size: 3.7vw;
+  font-family: system-ui;
+  text-align: right;
+  color: #ffff;
+  border: 1px;
+  right: -10.5rem;
+  text-align: left;
+  margin-top: 7.4rem;
+  width: 95% !important;
+  top: 6rem !important;
+}
+#formulario-portada .titulo-form {
+    color: #1253fe;
+    text-transform: none;
+    line-height: 1.5em;
+    height: 70px;
+    margin-bottom: 2px;
+    font-size: 0.98rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+  }
+#formulario-portada .btn-formulario {
+    width: 25%;
+    background-color: #0c4ffe;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 7px 0;
+    border-radius: 12px;
+    font-size: larger;
+  }
+
+  .form-input::placeholder{
+  color: #000;
+}
+/*Responsivo de la Portada*/ 
+
+@media screen and (max-width: 1200px) {
+  .h1_portada {
+    width: 50%;
+    justify-content: center;
+    position: relative;
+    font-size: 5vw;
+    top: 6rem;
+    right: -1rem;
+    font-family: system-ui;
+    text-align: left;
+    color: #ffff;
+    border: 1px;
+    margin-left: 3rem;
+    margin-top: -2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #main-portada {
+    width: 100%;
+    position: relative;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    height: 500px;
+}
+  #main-portada .principal-img{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: auto;         
+  }
+  .h1_portada {
+    width: 50%;
+    justify-content: center;
+    position: relative;
+    font-size: 4vw;
+    top: 6rem;
+    right: -3rem;
+    font-family: system-ui;
+    text-align: left;
+    color: #ffff;
+    border: 1px;
+    margin-left: -14px;
+    margin-top: -40px;
+    display: inline-block;
+    position: relative;
+  }
+  #formulario-portada {
+    padding: 10px;
+    width: 265px;
+    height: 260px;
+    left: 60%;
+    top: 60%;
+    box-shadow: 0px 2px 14px;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #main-portada {
+    width: 100%;
+    position: relative;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    height: 500px;
+}
+  #main-portada .principal-img{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: auto;         
+  }
+  .h1_portada {
+    width: 50%;
+    justify-content: center;
+    position: relative;
+    font-size: 4vw;
+    top: 6rem;
+    right: -3rem;
+    font-family: system-ui;
+    text-align: left;
+    color: #ffff;
+    border: 1px;
+    margin-left: -14px;
+    margin-top: -40px;
+    display: inline-block;
+    position: relative;
+    visibility: hidden;
+  }
+  .h1_portada::before {
+    content: "Contacta";
+    display: block;
+    visibility: visible;
+    margin-bottom: -1.5rem;
+    padding-left: 2.3rem;
+    font-size: 2rem;
+  }
+
+  .h1_portada::after {
+    content: "con nosotros";
+    display: block;
+    visibility: visible;
+    margin-top: -0.5rem;
+    padding-left: 2.3rem;
+    font-size: 2rem;
+  }
+}
+
+#grid-contactanos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fefaf5;
+  gap: 20px;
+  }
+
+#contenedor-informacion {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+    overflow: hidden;
+    background-color: #fefaf5;
+    margin: -1vw;
+  }
+  
+#informacion-contactanos {
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  padding: 20%;
+  background-color: #fefaf5; 
+  margin: 20px;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+}
+
+#form-contactanos {
+  padding: 55px;
+  width: 650px;
+  height: 920px;
+  background-color: #F5F5F5;
+  border-radius: 50px;
+  box-shadow: 0 11px 21px rgba(0, 0, 0, 0.2);
+}
+
+  .mensaje {
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  .contact-info {
+    margin-bottom: 1em;
+    margin-left: auto;
+    font-size: 30px;
+    position: relative;
+  }
+  .contact-info::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+  }
+  
+  .contact-info span.bold {
+    font-weight: 700;
+  }
+  
+  .contact-info:nth-child(2) {
+    margin-top: 1cm;
+  }
+  
+  .contact-info:nth-child(3) {
+    margin-top: 1cm;
+  }
+  
+  .contact-info:nth-child(3)::before {
+    content: "\A";
+    white-space: pre;
+  }
+  .mensaje2 {
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 35px;
+    margin-top: 150px;
+    font-weight: 700;
+  }
+  
+  .sombreado-icon {
+    box-shadow: 0px 3px 12px -2px #000;
+  }
+  #informacion-contactanos {
+  padding: 20px;
+  background-color: #fefaf5;
+  margin-left: 200px;
+  }
+  #informacion-contactanos {
+    padding: 20px;
+    background-color: #fefaf5;
+    margin-left: 200px;
+  }
+
+  /* grip-contactanos*/
+  @media (max-width: 500px){
+  .contact-info span.bold {
+    font-size: 20px;
+    }	
+  }
+
+@media screen and (max-width: 500px) {
+  #form-contactanos {
+      width: 100%;
+      margin: 0 auto;
+  }
+  #informacion-contactanos {
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 10%;
+    background-color: #fefaf5; 
+    margin: 20px;
+    margin: 0 auto;
+    margin-left: 0;
+  }
+      
+}
+
+  #informacion-contactanos p {
+      font-size: 14px;
+  }
+  .titulo-form {
+  width: 90%;
+  text-align: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+  .formulario h2 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  .formulario h2:last-child {
+    margin-left: 50px;
+    text-align: right;
+  }
+
+  .formulario label {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #contactForm button[type="submit"] {
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #5DD6E6;
+    transition: background 1s;
+  }
+
+  .button__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    transition: all 0.2s;
+  }
+
+  .button__loading .button__text {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .button__loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+
+  @keyframes button-loading-spinner {
+    from {
+      transform: rotate(0turn);
+    }
+
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  .swal2-container {
+    top: 95px !important;
+  }
+
+  .swal2-title {
+    font-size: 16px !important;
+  }
+
+  .swal2-success-circular-line-left,
+  .swal2-success-circular-line-right,
+  .swal2-success-fix {
+    background-color: transparent !important;
+  }
+
+  @media screen and (max-width: 1119px) {
+    .swal2-container {
+      top: 75px !important;
+    }
+  }
+
+#informacion-contactanos p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+  
+/* Mejorando el contenedor de Redes */
+#informacion-contactanos .redes {
+  text-align: center; 
+}
+
+#informacion-contactanos .redes img {
+  margin: 0 10px; 
+}
+
+#informacion-contactanos ul {
+  list-style: none;
+  padding: 0;
+}
+
+#informacion-contactanos li {
+  margin-bottom: 10px;
+}
+
+#informacion-contactanos li p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 450px) {
+  #contenedor-informacion{
+    width: 100%;
+    margin-bottom: 0px;
+
+}
+  
+  #form-contactanos {
+      width: 100%;
+  }
+
+  #informacion-contactanos li p {
+      font-size: 19px;
+  }
+.contact-info:nth-child(2) {
+  margin-top: 0.5cm;
+}
+.contact-info:nth-child(3) {
+  margin-top: 0.5cm;
+}
+}
+
+  /*----------------aINICIO DEL FORMULARIO-------------------------*/
+
+  body {
+    background-color: #F5F5F5;
+  }
+  .formulario {
+    /* Otros estilos del formulario... */
+    margin-bottom: 2cm;
+    /* Ajusta la medida según tus necesidades */
+  }
+
+  body {
+    background-color: #F5F5F5;
+  }
