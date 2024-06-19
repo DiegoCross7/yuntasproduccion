@@ -5,33 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Letreros-neon-led-anuncios-cuadros-decoracion-luces</title>
+    
     <!-- ESTILOS GLOBALES -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/ventana.css"> 
-
+    
     <!--=============== REMIXICONS ===============-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
+    <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> 
     
-    <link rel="preload" as="image" href="./assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp" type="image/webp">
-       <link rel="preload" href="./css/productos-cards.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- PRELOAD STYLESHEET -->
+    <link rel="preload" href="./css/productos-cards.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="./css/productos-cards.css">
+    </noscript>
 
-    </noscript><link rel="stylesheet" href="./css/productos-cards.css">
-
-    <!--=============== estilos ===============-->
+    <!--=============== ESTILOS ===============-->
     <link rel="stylesheet" href="css/letreros-neon-led-anuncios-cuadros-decoracion-luces.css">
-
+    
+    <!-- PRELOAD IMAGE -->
+    <link rel="preload" as="image" href="./assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp" type="image/webp">
+    
+    <!-- VERIFICACIÓN GOOGLE -->
     <meta name="google-site-verification" content="W_l4sQOITnTO1rpKtYsth1y89RXuhQ3aIkt4A9VTJgs" />
 </head>
+
 
 <body>
     <?php include './includes/navbar.php' ?>
@@ -266,175 +272,134 @@
 
     </div>
 
-    <?php include './includes/button-wsp.php' ?>
-    <?php include './includes/button-form.php' ?>
-    <?php include './includes/footer.php' ?>
+    <?php include './includes/button-wsp.php'; ?>
+    <?php include './includes/button-form.php'; ?>
+    <?php include './includes/footer.php'; ?>
 
-    <script type="module" async src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule defer src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!-- Cargar scripts externamente con defer o async para optimizar el rendimiento -->
+            <script type="module" async src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule defer src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+            <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script defer src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+            <script defer src="./js/mensajes-wsp.js"></script>
+            <script defer src="./js/carrusel-productos-cards.js"></script>
+            <script defer src="./js/productos.js"></script>
+            <script defer src="./js/carrusel-portada.js"></script>
 
-    <script defer src="./js/mensajes-wsp.js"></script>
-    <script defer src="./js/carrusel-productos-cards.js"></script>
-    <script defer src="./js/productos.js"></script>
-    <script defer src="./js/carrusel-portada.js"></script>
-
-
-    <script>
-        // Función para guardar los datos en el localStorage
-        function guardarDatosEnLocalStorage(data) {
-            localStorage.setItem("whatsappData", JSON.stringify(data));
-        }
-
-        // Función para obtener el número de teléfono del localStorage
-        function obtenerNumeroTelefonoDelLocalStorage() {
-            const data = localStorage.getItem("whatsappData");
-            return data ? JSON.parse(data).phoneNumber : null;
-        }
-
-        // Función para obtener los datos del localStorage
-        function obtenerDatosDelLocalStorage() {
-            const data = localStorage.getItem("whatsappData");
-            return data ? JSON.parse(data) : null;
-        }
-
-        // Función para enviar los mensajes de WhatsApp
-        function envioDatosWhatsApp(num) {
-            const phone = "51" + num;
-            console.log("Iniciando envío de mensajes de WhatsApp para el número:", phone);
-
-            // Definir los intervalos de tiempo entre cada mensaje en milisegundos
-            //   const tiemposEnMinutos = [0, 5000, 10000];
-            const tiemposEnMinutos = [0, 2, 5];
-            const intervalos = tiemposEnMinutos.map(tiempo => tiempo * 60000); // Intervalos entre el primer, segundo y tercer mensaje
-
-            // Función para enviar un mensaje y actualizar el localStorage
-            function enviarMensaje(index) {
-                sendWsApi(mensajesWtsp[0][index], imagenesWtsp[0][index], phone);
-                console.log("Mensaje", index + 1, "enviado.");
-                sentMessages.push({
-                    index,
-                    time: new Date().getTime(),
-                });
-                guardarDatosEnLocalStorage({
-                    phoneNumber: num,
-                    sentMessages: sentMessages,
-                });
-
-                // Si se ha enviado el tercer mensaje, eliminar los datos del localStorage
-                if (index === 2) {
-                    console.log(
-                        "Eliminando localStorage después de enviar todos los mensajes."
-                    );
-                    localStorage.removeItem("whatsappData");
-                }
+            <script>
+            // Función para guardar datos en localStorage
+            function guardarDatosEnLocalStorage(data) {
+                localStorage.setItem("whatsappData", JSON.stringify(data));
             }
 
-            // Función para verificar y enviar el siguiente mensaje
-            function enviarSiguienteMensaje() {
-                if (messageIndex < mensajesWtsp[0].length) {
-                    enviarMensaje(messageIndex);
-                    messageIndex++;
+            // Función para obtener datos de localStorage
+            function obtenerDatosDelLocalStorage() {
+                const data = localStorage.getItem("whatsappData");
+                return data ? JSON.parse(data) : null;
+            }
+
+            // Función para obtener el número de teléfono del localStorage
+            function obtenerNumeroTelefonoDelLocalStorage() {
+                const data = obtenerDatosDelLocalStorage();
+                return data ? data.phoneNumber : null;
+            }
+
+            // Función para enviar los mensajes de WhatsApp
+            function envioDatosWhatsApp(num) {
+                const phone = "51" + num;
+                console.log("Iniciando envío de mensajes de WhatsApp para el número:", phone);
+
+                const tiemposEnMinutos = [0, 2, 5];
+                const intervalos = tiemposEnMinutos.map(tiempo => tiempo * 60000);
+
+                function enviarMensaje(index) {
+                    sendWsApi(mensajesWtsp[0][index], imagenesWtsp[0][index], phone);
+                    console.log("Mensaje", index + 1, "enviado.");
+                    sentMessages.push({ index, time: new Date().getTime() });
+                    guardarDatosEnLocalStorage({ phoneNumber: num, sentMessages });
+
+                    if (index === 2) {
+                        console.log("Eliminando localStorage después de enviar todos los mensajes.");
+                        localStorage.removeItem("whatsappData");
+                    }
+                }
+
+                function enviarSiguienteMensaje() {
+                    if (messageIndex < mensajesWtsp[0].length) {
+                        enviarMensaje(messageIndex);
+                        messageIndex++;
+                        setTimeout(enviarSiguienteMensaje, intervalos[messageIndex]);
+                    }
+                }
+
+                const storedData = obtenerDatosDelLocalStorage();
+                const sentMessages = storedData ? storedData.sentMessages || [] : [];
+                let messageIndex = sentMessages.length;
+
+                if (messageIndex === 0) {
+                    enviarSiguienteMensaje();
+                } else {
                     setTimeout(enviarSiguienteMensaje, intervalos[messageIndex]);
                 }
             }
 
-            // Verificar si hay mensajes pendientes en el localStorage y continuar enviándolos
-            const storedData = obtenerDatosDelLocalStorage();
-            const sentMessages = storedData ? storedData.sentMessages || [] : [];
-            let messageIndex = sentMessages.length; // Indica el índice del siguiente mensaje a enviar
+            // Evento para controlar el envío del formulario
+            document.getElementById("formMain").addEventListener("submit", function(event) {
+                event.preventDefault();
 
-            // Si no hay mensajes pendientes, enviar el primer mensaje
-            if (messageIndex === 0) {
-                enviarSiguienteMensaje();
-            } else {
-                // Si hay mensajes pendientes, reanudar el envío desde el próximo mensaje
-                setTimeout(enviarSiguienteMensaje, intervalos[messageIndex]);
-            }
-        }
-
-        // Evento para controlar el envío del formulario
-        document
-            .getElementById("formMain")
-            .addEventListener("submit", function(event) {
-                event.preventDefault(); // Evitar el envío del formulario por defecto
-
-                // Verificar si hay mensajes pendientes en el localStorage
                 const storedData = obtenerDatosDelLocalStorage();
                 const sentMessages = storedData ? storedData.sentMessages || [] : [];
 
                 if (sentMessages.length >= 1 && sentMessages.length < 3) {
-                    alert(
-                        "Debes esperar a que se completen los mensajes de WhatsApp antes de enviar otro formulario."
-                    );
+                    alert("Debes esperar a que se completen los mensajes de WhatsApp antes de enviar otro formulario.");
                     return;
                 }
 
-                // Si no hay mensajes pendientes, permitir el envío del formulario
-                submit();
+                this.submit();
             });
 
-        // Llamar a la función para enviar los mensajes de WhatsApp cuando se cargue la página
-        window.onload = function() {
-            console.log(localStorage.getItem("formulario-portada"));
-
-            // Obtener el número de teléfono del formulario desde el LocalStorage
-            const storedPhoneNumber = obtenerNumeroTelefonoDelLocalStorage();
-
-            // Verificar si se recuperó un número de teléfono válido desde el LocalStorage
-            const storedData = obtenerDatosDelLocalStorage();
-            const sentMessages = storedData ? storedData.sentMessages || [] : [];
-            if (
-                storedPhoneNumber && 
-                storedPhoneNumber.trim() !== "" &&
-                sentMessages.length < 3
-            ) {
-                // Llamar a la función para enviar los mensajes de WhatsApp con el número recuperado
-                envioDatosWhatsApp(storedPhoneNumber);
-            } else {
-                console.warn(
-                    "Número de teléfono no válido o ya se han enviado los mensajes."
-                );
-            }
-        };
-
-        function enviarEmailAjax() {
-            // var queryString = window.location.search;
-            // var parametros = new URLSearchParams(queryString);
-            // const id_ser = parametros.get('id');
-
-            const id_ser = document.getElementById('id_ser').value;
-            const email = document.getElementById('email').value;
-
-            var datos = new FormData();
-            datos.append("id_ser", id_ser);
-            datos.append("email", email);
-
-            $.ajax({
-                // url: "./public/message/Controller/process.php",
-                url: "./message/Controller/process.php",
-                method: "POST",
-                data: datos,
-                cache: false,
-                contentType: false,
-                processData: false,
-                success: function(respuesta) {
-                    console.log("Respuesta", respuesta);
-                    if (respuesta.trim().toLowerCase() === "correctocorrectocorrecto") {
-                        alert("Email Enviado");
-                        window.location.href = "./public/message/Controller/process.php";
-
-                    } else {
-                        alert("ocurrio un error " + respuesta);
-                    }
+            // Enviar mensajes de WhatsApp cuando se cargue la página
+            window.onload = function() {
+                console.log(localStorage.getItem("formulario-portada"));
+                const storedPhoneNumber = obtenerNumeroTelefonoDelLocalStorage();
+                const sentMessages = obtenerDatosDelLocalStorage() ? obtenerDatosDelLocalStorage().sentMessages || [] : [];
+                
+                if (storedPhoneNumber && storedPhoneNumber.trim() !== "" && sentMessages.length < 3) {
+                    envioDatosWhatsApp(storedPhoneNumber);
+                } else {
+                    console.warn("Número de teléfono no válido o ya se han enviado los mensajes.");
                 }
-            })
-        }
-    </script>
+            };
+
+            function enviarEmailAjax() {
+                const id_ser = document.getElementById('id_ser').value;
+                const email = document.getElementById('email').value;
+                const datos = new FormData();
+                datos.append("id_ser", id_ser);
+                datos.append("email", email);
+
+                $.ajax({
+                    url: "./message/Controller/process.php",
+                    method: "POST",
+                    data: datos,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function(respuesta) {
+                        console.log("Respuesta", respuesta);
+                        if (respuesta.trim().toLowerCase() === "correctocorrectocorrecto") {
+                            alert("Email Enviado");
+                            window.location.href = "./public/message/Controller/process.php";
+                        } else {
+                            alert("Ocurrió un error " + respuesta);
+                        }
+                    }
+                });
+            }
+            </script>
 
 </body>
 
