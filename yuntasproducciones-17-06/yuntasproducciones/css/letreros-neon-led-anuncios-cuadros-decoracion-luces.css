@@ -216,16 +216,3 @@ h1 {
     font-size: 40px;
 }
 
-/* Estilos para el slider */
-.tranding-slide-img {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-.tranding-slide-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}

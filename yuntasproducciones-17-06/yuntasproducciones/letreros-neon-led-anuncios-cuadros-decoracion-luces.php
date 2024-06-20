@@ -31,9 +31,6 @@
     <!--=============== ESTILOS ===============-->
     <link rel="stylesheet" href="css/letreros-neon-led-anuncios-cuadros-decoracion-luces.css">
     
-    <!-- PRELOAD IMAGE -->
-    <link rel="preload" as="image" href="./assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp" type="image/webp">
-    
     <!-- VERIFICACIÓN GOOGLE -->
     <meta name="google-site-verification" content="W_l4sQOITnTO1rpKtYsth1y89RXuhQ3aIkt4A9VTJgs" />
 </head>
@@ -71,9 +68,9 @@
     <img loading="lazy" src="./assets/productos-cards/IMAGE_SEMIAZUL.webp" id="semiazul" alt="Descuento">
     <div class="slider">
         <div class="slider--inner">
-            <img fetchpriority="high" src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp" alt="Imagen" data-texto="Transforma tus ambientes con la luminosidad y versatilidad de nuestros letreros neón LED"/>    
-            <img loading="lazy" src="./assets/productos-cards/PORTADA_LETRERO_NEON02.webp" alt="Imagen" data-texto="Imagina tus palabras favoritas o tu logotipo en un neón 3D brillante. Nuestros letreros de neón LED lo hacen posible."/>      
-            <img loading="lazy" src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON03.webp" alt="Imagen" data-texto="Desde nombres hasta frases inspiradoras, nuestros letreros de neón LED añaden un toque moderno y vibrante." style="bottom:10px;"/>
+            <img fetchpriority="high" src="../assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp" alt="Imagen" data-texto="Transforma tus ambientes con la luminosidad y versatilidad de nuestros letreros neón LED"/>    
+            <img loading="lazy" src="../assets/productos-cards/PORTADA_LETRERO_NEON02.webp" alt="Imagen" data-texto="Imagina tus palabras favoritas o tu logotipo en un neón 3D brillante. Nuestros letreros de neón LED lo hacen posible."/>      
+            <img loading="lazy" src="../assets/letreros-neon-led/PORTADA_LETREROS-NEON03.webp" alt="Imagen" data-texto="Desde nombres hasta frases inspiradoras, nuestros letreros de neón LED añaden un toque moderno y vibrante." style="bottom:10px;"/>
         </div>
     </div>
 
