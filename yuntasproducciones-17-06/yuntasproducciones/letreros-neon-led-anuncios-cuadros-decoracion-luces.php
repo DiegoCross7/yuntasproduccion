@@ -10,31 +10,24 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/ventana.css"> 
-    
     <!--=============== REMIXICONS ===============-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-    <!-- IONICONS -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
     <!-- PRELOAD STYLESHEET -->
     <link rel="preload" href="./css/productos-cards.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="./css/productos-cards.css">
     </noscript>
-
     <!--=============== ESTILOS ===============-->
     <link rel="stylesheet" href="css/letreros-neon-led-anuncios-cuadros-decoracion-luces.css">
-    
+    <!-- PRECONNECT PARA JSDelivr CDN -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <!-- DNS-PREFETCH PARA JSDelivr CDN -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <!-- VERIFICACIÓN GOOGLE -->
     <meta name="google-site-verification" content="W_l4sQOITnTO1rpKtYsth1y89RXuhQ3aIkt4A9VTJgs" />
 </head>
-
 
 <body>
     <?php include './includes/navbar.php' ?>
@@ -67,13 +60,12 @@
     <label class="asesoria-gratis">ASESORIA GRATIS!!!</label>
     <img loading="lazy" src="./assets/productos-cards/IMAGE_SEMIAZUL.webp" id="semiazul" alt="Descuento">
     <div class="slider">
-    <div class="slider--inner">
-        <img fetchpriority="high" src="../assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp" alt="Imagen" data-texto="Transforma tus ambientes con la luminosidad y versatilidad de nuestros letreros neón LED"/>    
-        <img loading="lazy" fetchpriority="low" src="../assets/productos-cards/PORTADA_LETRERO_NEON02.webp" alt="Imagen" data-texto="Imagina tus palabras favoritas o tu logotipo en un neón 3D brillante. Nuestros letreros de neón LED lo hacen posible."/>      
-        <img loading="lazy" fetchpriority="low" src="../assets/letreros-neon-led/PORTADA_LETREROS-NEON03.webp" alt="Imagen" data-texto="Desde nombres hasta frases inspiradoras, nuestros letreros de neón LED añaden un toque moderno y vibrante." style="bottom:10px;"/>
+        <div class="slider--inner">
+            <img fetchpriority="high" src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp" alt="Imagen" data-texto="Transforma tus ambientes con la luminosidad y versatilidad de nuestros letreros neón LED"/>    
+            <img loading="lazy" src="./assets/productos-cards/PORTADA_LETRERO_NEON02.webp" alt="Imagen" data-texto="Imagina tus palabras favoritas o tu logotipo en un neón 3D brillante. Nuestros letreros de neón LED lo hacen posible."/>      
+            <img loading="lazy" src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON03.webp" alt="Imagen" data-texto="Desde nombres hasta frases inspiradoras, nuestros letreros de neón LED añaden un toque moderno y vibrante." style="bottom:10px;"/>
+        </div>
     </div>
-</div>
-
 
     <div id="formulario-portada">
         <span id="cerrar-modal">&times;</span>
@@ -204,53 +196,34 @@
 
                         <div class="swiper-slide tranding-slide">
                             <div class="tranding-slide-img">
-                                <picture>
-                                    <source srcset="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.webp" type="image/webp">
-                                    <source srcset="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.jpg" type="image/jpeg">
-                                    <img loading="lazy" src="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.jpg" alt="tranding_image_slide" width="800" height="600">
-                                </picture>
+                                <img loading="lazy" src="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                             </div>
                         </div>
 
                         <div class="swiper-slide tranding-slide">
                             <div class="tranding-slide-img">
-                                <picture>
-                                    <source srcset="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.webp" type="image/webp">
-                                    <source srcset="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.jpg" type="image/jpeg">
-                                    <img loading="lazy" src="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.jpg" alt="tranding_image_slide" width="800" height="600">
-                                </picture>
+                                <img loading="lazy" src="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                             </div>
                         </div>
 
                         <div class="swiper-slide tranding-slide">
                             <div class="tranding-slide-img">
-                                <picture>
-                                    <source srcset="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.webp" type="image/webp">
-                                    <source srcset="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.jpg" type="image/jpeg">
-                                    <img loading="lazy" src="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.jpg" alt="tranding_image_slide" width="800" height="600">
-                                </picture>
+                                <img loading="lazy" src="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                             </div>
                         </div>
 
                         <div class="swiper-slide tranding-slide">
                             <div class="tranding-slide-img">
-                                <picture>
-                                    <source srcset="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.webp" type="image/webp">
-                                    <source srcset="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.jpg" type="image/jpeg">
-                                    <img loading="lazy" src="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.jpg" alt="tranding_image_slide" width="800" height="600">
-                                </picture>
+                                <img loading="lazy" src="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                             </div>
                         </div>
 
                         <div class="swiper-slide tranding-slide">
                             <div class="tranding-slide-img">
-                                <picture>
-                                    <source srcset="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.webp" type="image/webp">
-                                    <source srcset="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.jpg" type="image/jpeg">
-                                    <img loading="lazy" src="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.jpg" alt="tranding_image_slide" width="800" height="600">
-                                </picture>
+                                <img loading="lazy" src="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                             </div>
                         </div>
+
 
                     </div>
 
@@ -267,137 +240,131 @@
                 </div>
             </div>
         </section>
-
     </div>
 
     <?php include './includes/button-wsp.php'; ?>
     <?php include './includes/button-form.php'; ?>
     <?php include './includes/footer.php'; ?>
 
-<!-- Cargar scripts externamente con defer o async para optimizar el rendimiento -->
-            <script type="module" async src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule defer src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-            <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-            <script defer src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Cargar scripts externamente con defer o async para optimizar el rendimiento -->
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <script defer src="./js/mensajes-wsp.js"></script>
+    <script defer src="./js/carrusel-productos-cards.js"></script>
+    <script defer src="./js/productos.js"></script>
+    <script defer src="./js/carrusel-portada.js"></script>
 
-            <script defer src="./js/mensajes-wsp.js"></script>
-            <script defer src="./js/carrusel-productos-cards.js"></script>
-            <script defer src="./js/productos.js"></script>
-            <script defer src="./js/carrusel-portada.js"></script>
+    <script>
+        // Función para guardar datos en localStorage
+        function guardarDatosEnLocalStorage(data) {
+            localStorage.setItem("whatsappData", JSON.stringify(data));
+        }
 
-            <script>
-            // Función para guardar datos en localStorage
-            function guardarDatosEnLocalStorage(data) {
-                localStorage.setItem("whatsappData", JSON.stringify(data));
-            }
+        // Función para obtener datos de localStorage
+        function obtenerDatosDelLocalStorage() {
+            const data = localStorage.getItem("whatsappData");
+            return data ? JSON.parse(data) : null;
+        }
 
-            // Función para obtener datos de localStorage
-            function obtenerDatosDelLocalStorage() {
-                const data = localStorage.getItem("whatsappData");
-                return data ? JSON.parse(data) : null;
-            }
+        // Función para obtener el número de teléfono del localStorage
+        function obtenerNumeroTelefonoDelLocalStorage() {
+            const data = obtenerDatosDelLocalStorage();
+            return data ? data.phoneNumber : null;
+        }
 
-            // Función para obtener el número de teléfono del localStorage
-            function obtenerNumeroTelefonoDelLocalStorage() {
-                const data = obtenerDatosDelLocalStorage();
-                return data ? data.phoneNumber : null;
-            }
+        // Función para enviar los mensajes de WhatsApp
+        function envioDatosWhatsApp(num) {
+            const phone = "51" + num;
+            console.log("Iniciando envío de mensajes de WhatsApp para el número:", phone);
 
-            // Función para enviar los mensajes de WhatsApp
-            function envioDatosWhatsApp(num) {
-                const phone = "51" + num;
-                console.log("Iniciando envío de mensajes de WhatsApp para el número:", phone);
+            const tiemposEnMinutos = [0, 2, 5];
+            const intervalos = tiemposEnMinutos.map(tiempo => tiempo * 60000);
 
-                const tiemposEnMinutos = [0, 2, 5];
-                const intervalos = tiemposEnMinutos.map(tiempo => tiempo * 60000);
+            function enviarMensaje(index) {
+                sendWsApi(mensajesWtsp[0][index], imagenesWtsp[0][index], phone);
+                console.log("Mensaje", index + 1, "enviado.");
+                sentMessages.push({ index, time: new Date().getTime() });
+                guardarDatosEnLocalStorage({ phoneNumber: num, sentMessages });
 
-                function enviarMensaje(index) {
-                    sendWsApi(mensajesWtsp[0][index], imagenesWtsp[0][index], phone);
-                    console.log("Mensaje", index + 1, "enviado.");
-                    sentMessages.push({ index, time: new Date().getTime() });
-                    guardarDatosEnLocalStorage({ phoneNumber: num, sentMessages });
-
-                    if (index === 2) {
-                        console.log("Eliminando localStorage después de enviar todos los mensajes.");
-                        localStorage.removeItem("whatsappData");
-                    }
+                if (index === 2) {
+                    console.log("Eliminando localStorage después de enviar todos los mensajes.");
+                    localStorage.removeItem("whatsappData");
                 }
+            }
 
-                function enviarSiguienteMensaje() {
-                    if (messageIndex < mensajesWtsp[0].length) {
-                        enviarMensaje(messageIndex);
-                        messageIndex++;
-                        setTimeout(enviarSiguienteMensaje, intervalos[messageIndex]);
-                    }
-                }
-
-                const storedData = obtenerDatosDelLocalStorage();
-                const sentMessages = storedData ? storedData.sentMessages || [] : [];
-                let messageIndex = sentMessages.length;
-
-                if (messageIndex === 0) {
-                    enviarSiguienteMensaje();
-                } else {
+            function enviarSiguienteMensaje() {
+                if (messageIndex < mensajesWtsp[0].length) {
+                    enviarMensaje(messageIndex);
+                    messageIndex++;
                     setTimeout(enviarSiguienteMensaje, intervalos[messageIndex]);
                 }
             }
 
-            // Evento para controlar el envío del formulario
-            document.getElementById("formMain").addEventListener("submit", function(event) {
-                event.preventDefault();
+            const storedData = obtenerDatosDelLocalStorage();
+            const sentMessages = storedData ? storedData.sentMessages || [] : [];
+            let messageIndex = sentMessages.length;
 
-                const storedData = obtenerDatosDelLocalStorage();
-                const sentMessages = storedData ? storedData.sentMessages || [] : [];
-
-                if (sentMessages.length >= 1 && sentMessages.length < 3) {
-                    alert("Debes esperar a que se completen los mensajes de WhatsApp antes de enviar otro formulario.");
-                    return;
-                }
-
-                this.submit();
-            });
-
-            // Enviar mensajes de WhatsApp cuando se cargue la página
-            window.onload = function() {
-                console.log(localStorage.getItem("formulario-portada"));
-                const storedPhoneNumber = obtenerNumeroTelefonoDelLocalStorage();
-                const sentMessages = obtenerDatosDelLocalStorage() ? obtenerDatosDelLocalStorage().sentMessages || [] : [];
-                
-                if (storedPhoneNumber && storedPhoneNumber.trim() !== "" && sentMessages.length < 3) {
-                    envioDatosWhatsApp(storedPhoneNumber);
-                } else {
-                    console.warn("Número de teléfono no válido o ya se han enviado los mensajes.");
-                }
-            };
-
-            function enviarEmailAjax() {
-                const id_ser = document.getElementById('id_ser').value;
-                const email = document.getElementById('email').value;
-                const datos = new FormData();
-                datos.append("id_ser", id_ser);
-                datos.append("email", email);
-
-                $.ajax({
-                    url: "./message/Controller/process.php",
-                    method: "POST",
-                    data: datos,
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                    success: function(respuesta) {
-                        console.log("Respuesta", respuesta);
-                        if (respuesta.trim().toLowerCase() === "correctocorrectocorrecto") {
-                            alert("Email Enviado");
-                            window.location.href = "./public/message/Controller/process.php";
-                        } else {
-                            alert("Ocurrió un error " + respuesta);
-                        }
-                    }
-                });
+            if (messageIndex === 0) {
+                enviarSiguienteMensaje();
+            } else {
+                setTimeout(enviarSiguienteMensaje, intervalos[messageIndex]);
             }
-            </script>
+        }
+
+        // Evento para controlar el envío del formulario
+        document.getElementById("formMain").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const storedData = obtenerDatosDelLocalStorage();
+            const sentMessages = storedData ? storedData.sentMessages || [] : [];
+
+            if (sentMessages.length >= 1 && sentMessages.length < 3) {
+                alert("Debes esperar a que se completen los mensajes de WhatsApp antes de enviar otro formulario.");
+                return;
+            }
+
+            this.submit();
+        });
+
+        // Enviar mensajes de WhatsApp cuando se cargue la página
+        window.onload = function() {
+            console.log(localStorage.getItem("formulario-portada"));
+            const storedPhoneNumber = obtenerNumeroTelefonoDelLocalStorage();
+            const sentMessages = obtenerDatosDelLocalStorage() ? obtenerDatosDelLocalStorage().sentMessages || [] : [];
+            
+            if (storedPhoneNumber && storedPhoneNumber.trim() !== "" && sentMessages.length < 3) {
+                envioDatosWhatsApp(storedPhoneNumber);
+            } else {
+                console.warn("Número de teléfono no válido o ya se han enviado los mensajes.");
+            }
+        };
+
+        function enviarEmailAjax() {
+            const id_ser = document.getElementById('id_ser').value;
+            const email = document.getElementById('email').value;
+            const datos = new FormData();
+            datos.append("id_ser", id_ser);
+            datos.append("email", email);
+
+            $.ajax({
+                url: "./message/Controller/process.php",
+                method: "POST",
+                data: datos,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function(respuesta) {
+                    console.log("Respuesta", respuesta);
+                    if (respuesta.trim().toLowerCase() === "correctocorrectocorrecto") {
+                        alert("Email Enviado");
+                        window.location.href = "./public/message/Controller/process.php";
+                    } else {
+                        alert("Ocurrió un error " + respuesta);
+                    }
+                }
+            });
+        }
+    </script>
 
 </body>
 
