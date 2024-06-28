@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Letreros-neon-led-anuncios-cuadros-decoracion-luces</title>
-    
+    <title>Creatividad para Negocios y Eventos-Interiores-Diseño Innovador Exteriores-Yuntas Producciones</title>
+    <meta name="description" content="Expertos en diseño innovador de interiores y exteriores. Transformamos negocios y eventos con soluciones creativas y personalizadas que destacan. Te brindamos asesoría gratuita.">
     <!-- ESTILOS GLOBALES -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/estilo.css">
@@ -58,12 +57,12 @@
     <h1>LETREROS NEON LED</h1>
     <label id="texto-debajo-h1"></label>
     <label class="asesoria-gratis">ASESORIA GRATIS!!!</label>
-    <img loading="lazy" src="./assets/productos-cards/IMAGE_SEMIAZUL.webp" id="semiazul" alt="Descuento">
+    <img fetchpriority="low" src="./assets/productos-cards/IMAGE_SEMIAZUL.webp" id="semiazul" alt="Img-descuento" width="552" height="452" loading="lazy">
     <div class="slider">
         <div class="slider--inner">
             <img fetchpriority="high" src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp" alt="Imagen" data-texto="Transforma tus ambientes con la luminosidad y versatilidad de nuestros letreros neón LED"/>    
-            <img loading="lazy" src="./assets/productos-cards/PORTADA_LETRERO_NEON02.webp" alt="Imagen" data-texto="Imagina tus palabras favoritas o tu logotipo en un neón 3D brillante. Nuestros letreros de neón LED lo hacen posible."style="bottom:250px;"/>      
-            <img loading="lazy" src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON03.webp" alt="Imagen" data-texto="Desde nombres hasta frases inspiradoras, nuestros letreros de neón LED añaden un toque moderno y vibrante." style="bottom:10px;"/>
+            <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/PORTADA_LETRERO_NEON02.webp" alt="Imagen" data-texto="Imagina tus palabras favoritas o tu logotipo en un neón 3D brillante. Nuestros letreros de neón LED lo hacen posible." style="bottom:250px;"/>      
+            <img fetchpriority="low" loading="lazy" src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON03.webp" alt="Imagen" data-texto="Desde nombres hasta frases inspiradoras, nuestros letreros de neón LED añaden un toque moderno y vibrante." style="bottom:10px;"/>
         </div>
     </div>
 
@@ -81,35 +80,36 @@
 </div>
 
     <div class="container-carrusel">
-        <div class="swiper-container carrusel">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide item">
-                    <p class="text-carrusel">Letrero Led para restobares </p>
-                    <img loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED01.webp" class="img-piso" alt="carousel_image_01">
-                </div>
-                <div class="swiper-slide item">
-                    <p class="text-carrusel">Letrero Led como decoración</p>
-                    <img loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED02.webp" class="img-piso" alt="carousel_image_02">
-                </div>
-                <div class="swiper-slide item">
-                    <p class="text-carrusel">Letrero Led para restaurantes</p>
-                    <img loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED03.webp" class="img-piso" alt="carousel_image_03">
-                </div>
-                <div class="swiper-slide item">
-                    <p class="text-carrusel">Letrero Led para salon de bellesa</p>
-                    <img loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED04.webp" class="img-piso" alt="carousel_image_04">
-                </div>
-                <div class="swiper-slide item">
-                    <p class="text-carrusel">Letrero Led para bares</p>
-                    <img loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED05.webp" class="img-piso" alt="carousel_image_05">
-                </div>
-                <div class="swiper-slide item">
-                    <p class="text-carrusel">Letrero Led para negocios y más</p>
-                    <img loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED06.webp" class="img-piso" alt="carousel_image_06">
-                </div>
+    <div class="swiper-container carrusel">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide item">
+                <p class="text-carrusel">Letrero Led para restobares </p>
+                <img loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED01.webp" class="img-piso" alt="carousel_image_01">
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide item">
+                <p class="text-carrusel">Letrero Led como decoración</p>
+                <img loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED02.webp" class="img-piso" alt="carousel_image_02">
+            </div>
+            <div class="swiper-slide item">
+                <p class="text-carrusel">Letrero Led para restaurantes</p>
+                <img loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED03.webp" class="img-piso" alt="carousel_image_03">
+            </div>
+            <div class="swiper-slide item">
+                <p class="text-carrusel">Letrero Led para salon de bellesa</p>
+                <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED04.webp" class="img-piso" alt="carousel_image_04">
+            </div>
+            <div class="swiper-slide item">
+                <p class="text-carrusel">Letrero Led para bares</p>
+                <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED05.webp" class="img-piso" alt="carousel_image_05">
+            </div>
+            <div class="swiper-slide item">
+                <p class="text-carrusel">Letrero Led para negocios y más</p>
+                <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/CARRUSEL_LETRERO_NEON_LED06.webp" class="img-piso" alt="carousel_image_06">
+            </div>
         </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
         <a href="https://api.whatsapp.com/send?phone=51912849782">
             <button type="button" class="btn_cotizar">COTIZAR</button>
         </a>
@@ -192,41 +192,38 @@
         <section id="tranding">
             <div class="container-carousel">
                 <div class="swiper tranding-slider">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <img loading="lazy" src="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
-                            </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                         </div>
-
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <img loading="lazy" src="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <img loading="lazy" src="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <img loading="lazy" src="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide tranding-slide">
-                            <div class="tranding-slide-img">
-                                <img loading="lazy" src="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
-                            </div>
-                        </div>
-
-
                     </div>
 
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
+                        </div>
+                    </div>
+
+                    </div>
                     <div class="tranding-slider-control">
                         <div class="swiper-button-prev slider-arrow">
                             <ion-icon name="arrow-back-outline"></ion-icon>
