@@ -55,16 +55,41 @@
 
     <div id="main-portada">
     <h1>LETREROS NEON LED</h1>
-    <label id="texto-debajo-h1"></label>
-    <label class="asesoria-gratis">ASESORIA GRATIS!!!</label>
-    <img fetchpriority="low" src="./assets/productos-cards/IMAGE_SEMIAZUL.webp" id="semiazul" alt="Img-descuento" width="552" height="452" loading="lazy">
-    <div class="slider">
-        <div class="slider--inner">
-            <img fetchpriority="high" src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp" alt="Imagen" data-texto="Transforma tus ambientes con la luminosidad y versatilidad de nuestros letreros neón LED"/>    
-            <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/PORTADA_LETRERO_NEON02.webp" alt="Imagen" data-texto="Imagina tus palabras favoritas o tu logotipo en un neón 3D brillante. Nuestros letreros de neón LED lo hacen posible." style="bottom:250px;"/>      
-            <img fetchpriority="low" loading="lazy" src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON03.webp" alt="Imagen" data-texto="Desde nombres hasta frases inspiradoras, nuestros letreros de neón LED añaden un toque moderno y vibrante." style="bottom:10px;"/>
+        <label id="texto-debajo-h1"></label>
+        <label class="asesoria-gratis">ASESORIA GRATIS!!!</label>
+        <img fetchpriority="low" src="./assets/productos-cards/IMAGE_SEMIAZUL.webp" id="semiazul" alt="Img-descuento" width="552" height="452" loading="lazy">
+        <div class="slider">
+            <div class="slider--inner">
+                <img 
+                    fetchpriority="high" 
+                    src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp" 
+                    data-src-large="./assets/letreros-neon-led/PORTADA_LETREROS-NEON01.webp"
+                    data-src-small="./assets/letreros-neon-led/PORTADA_LETREROS-NEON01min.webp"
+                    alt="Imagen" 
+                    data-texto="Transforma tus ambientes con la luminosidad y versatilidad de nuestros letreros neón LED"
+                />
+                <img 
+                    fetchpriority="low" 
+                    loading="lazy" 
+                    src="./assets/productos-cards/PORTADA_LETRERO_NEON02.webp" 
+                    data-src-large="./assets/productos-cards/PORTADA_LETRERO_NEON02.webp"
+                    data-src-small="./assets/letreros-neon-led/PORTADA_LETRERO_NEON02min.webp"
+                    alt="Imagen" 
+                    data-texto="Imagina tus palabras favoritas o tu logotipo en un neón 3D brillante. Nuestros letreros de neón LED lo hacen posible."
+                    style="bottom:250px;"
+                />
+                <img 
+                    fetchpriority="low" 
+                    loading="lazy" 
+                    src="./assets/letreros-neon-led/PORTADA_LETREROS-NEON03.webp" 
+                    data-src-large="./assets/letreros-neon-led/PORTADA_LETREROS-NEON03.webp"
+                    data-src-small="./assets/letreros-neon-led/PORTADA_LETREROS-NEON03min.webp"
+                    alt="Imagen" 
+                    data-texto="Desde nombres hasta frases inspiradoras, nuestros letreros de neón LED añaden un toque moderno y vibrante."
+                    style="bottom:10px;"
+                />
+            </div>
         </div>
-    </div>
 
     <div id="formulario-portada">
         <span id="cerrar-modal">&times;</span>
@@ -160,7 +185,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -179,10 +203,8 @@
                 </div>
             </div>
             <div class="content_img" style="background-image: url(assets/productos-cards/BACKGROUND_SECTION03_PAGE01.webp);"></div>
-
         </div>
     </div>
-
     <div class="section_04">
         <div class="container_subtitles">
             <div class="subtitulos">
@@ -198,31 +220,26 @@
                             <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/IMAGE01_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                         </div>
                     </div>
-
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
                             <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/IMAGE02_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                         </div>
                     </div>
-
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
                             <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/IMAGE03_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                         </div>
                     </div>
-
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
                             <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/IMAGE04_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                         </div>
                     </div>
-
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
                             <img fetchpriority="low" loading="lazy" src="./assets/productos-cards/IMAGE05_SLIDER-3D_PAGE01.webp" alt="tranding_image_slide">
                         </div>
                     </div>
-
                     </div>
                     <div class="tranding-slider-control">
                         <div class="swiper-button-prev slider-arrow">
@@ -233,17 +250,32 @@
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
-
                 </div>
             </div>
         </section>
     </div>
-
     <?php include './includes/button-wsp.php'; ?>
     <?php include './includes/button-form.php'; ?>
     <?php include './includes/footer.php'; ?>
-
-    <!-- Cargar scripts externamente con defer o async para optimizar el rendimiento -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function updateImages() {
+                const images = document.querySelectorAll('.slider--inner img');
+                const screenWidth = window.innerWidth;
+                images.forEach(img => {
+                    if (screenWidth <= 370) {
+                        img.src = img.getAttribute('data-src-small');
+                    } else {
+                        img.src = img.getAttribute('data-src-large');
+                    }
+                });
+            }
+            // Update images on load
+            updateImages();
+            // Update images on resize
+            window.addEventListener('resize', updateImages);
+        });
+    </script>
     <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
     <script defer src="./js/mensajes-wsp.js"></script>
