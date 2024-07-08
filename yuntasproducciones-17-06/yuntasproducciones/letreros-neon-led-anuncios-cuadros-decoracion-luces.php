@@ -252,13 +252,13 @@
                     <div class="first_col">
                         <div class="line"></div>
                     </div>
-                    <div class="sec_col">
-                    <p>Hecho de material de acrílico (como panel de PVC).</p>
-                    <p>Personalizable en colores, diseño, fuentes, frases, etc.</p>
-                    <p>Resistente a golpes, polvo, agua, vibraciones, etc.</p>
-                    <p>Iluminación con Neón LED Flexible RGB espesor 5mm.</p>
-                    <p>No se puede recalentar ni emite algún ruido.</p>
-                    <p>Consumo de energía: 30v.</p>
+                    <div class="sec_col" style="gap: 5.7rem 0;">
+                        <p>Hecho de material de acrílico (como panel de PVC).</p>
+                        <p>Personalizable en colores, diseño, fuentes, frases, etc.</p>
+                        <p>Resistente a golpes, polvo, agua, vibraciones, etc.</p>
+                        <p>Iluminación con Neón LED Flexible RGB espesor 5mm.</p>
+                        <p>No se puede recalentar ni emite algún ruido.</p>
+                        <p>Consumo de energía: 30v.</p>
                     </div>
                 </div>
             </div>
